@@ -1,0 +1,23 @@
+[project]
+name = "butlerai"
+version = "0.1.0"
+description = "ButlerAI: a two-layer AI butler + runner system (spec-driven MVP)"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+authors = [{ name = "ButlerAI contributors" }]
+
+# 第一版完全使用标准库，避免依赖安装问题；后续可用 uv 添加 fastapi/httpx 等依赖。
+dependencies = []
+
+[project.scripts]
+butlerai-butler = "butlerai.butler.__main__:main"
+butlerai-runner = "butlerai.runner.__main__:main"
+
+[tool.uv]
+# 预留：你在本机用 uv 时可按需添加依赖/锁文件
+
+[tool.pytest.ini_options]
+# 若后续引入 pytest，这里预留；当前测试使用标准库 unittest，不依赖 pytest。
+testpaths = ["tests"]
+
