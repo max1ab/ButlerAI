@@ -4,4 +4,7 @@
 
 ## 文档
 
-- `docs/spec.md`：系统规格说明（Spec，作为后续 spec-driven 开发的依据）
+- `docs/spec.md`：Spec 总览（索引）
+  - `docs/spec/butler.md`：Butler 规格
+  - `docs/spec/runner.md`：Runner 规格
+  - `docs/spec/task.md`：Task 规格
